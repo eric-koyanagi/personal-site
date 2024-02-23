@@ -1,226 +1,246 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
-        <title>Eric Koyanagi | Software Engineer | Portland, OR</title>
+        <title>Eric Koyanagi | Software Engineer | Web Developer</title>
         <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
+                
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Protest+Guerrilla&display=swap" rel="stylesheet">
+
         <!-- Font Awesome icons (free version)-->
         <script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" crossorigin="anonymous"></script>
-        <!-- Google fonts-->
-        <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet" type="text/css" />
-        <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
-        <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="css/styles.css" rel="stylesheet" />
+
+        <link href="./css/output.css" rel="stylesheet">
     </head>
-    <body id="page-top">
-        <!-- Navigation-->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
-            <a class="navbar-brand js-scroll-trigger" href="#page-top">
-                <span class="d-block d-lg-none">Eric Koyanagi</span>
-                <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="assets/img/profile.jpg" alt="" /></span>
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experience">Experience</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education">Education</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">Skills</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#interests">Interests</a></li>
-                    <li class="nav-item"><a class="nav-link" href="https://articles.erickoyanagi.com/index.html">Articles</a></li>                    
+    <body class="font-display">
+        <div class="progressBar" style="position:fixed; top:0; height:5px; background:#aaa"></div>
+
+        <div class="w-100 text-center min-h-screen bg-fixed relative" style="background-image: url('./assets/img/workflow-example.jpg');">
+            <h1 class="py-8 mb-10 text-4xl sm:text-7xl shadow-sm font-heading text-white">Let's Make Something Great!</h1>
+            <div class="bg-black opacity-75 p-5 text-center mb-5">
+                <div class="opacity-100 text-white">
+                    <p class="pb-3">Hello, I'm <strong>Eric</strong>! I'm an experienced engineer with over 15 years of experience working out of the Pacific Northwest.</p>
+                    <p>Curious about what I've actually built? Keep scrolling!</p>
+                    
+                </div>
+            </div>
+            <!-- <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 px-3 pb-10" >
+                
+                <div class="">
+                    I use skills like <strong>PHP</strong>, </strong>JavaScript</strong>, <strong>mySQL</strong>, 
+                    and <strong>AWS</strong> to build robust, scalable software. Working in industries ranging from 
+                    e-commerce to adtech, I believe in product ownership and work ethic. 
+                </div>
+                
+            </div> -->
+
+            <div class="text-center my-10 px-6 sm:mt-36">
+                <a href="https://www.linkedin.com/in/erickoyanagi/" class="block sm:inline rounded bg-blue-800 text-2xl sm:text-3xl px-6 py-2 text-white sm:mr-5 hover:bg-blue-600">
+                    <span class="pr-3 text-blue-900"><i class="fab fa-linkedin-in"></i></span> My LinkedIn
+                </a>
+                <a href="https://github.com/eric-koyanagi" class="mt-5 sm:mt-0 block w-100 sm:inline rounded bg-blue-800 text-2xl sm:text-3xl px-6 py-2 text-white hover:bg-blue-600">
+                    <span class="pr-3 text-blue-900"><i class="fab fa-github"></i></span> My Github
+                </a>
+            </div>
+
+            <div class="w-full text-center absolute bottom-1 text-white text-2xl">
+                <a href="#jondo">Scroll <span><i class="fas fa-arrow-down"></i></span></a>
+            </div>
+        </div>
+
+
+        <div class="w-100 min-h-screen bg-gray-200 bg-fixed relative pb-10" style="background-image: url('./assets/img/jondo-1.jpg');">
+            <a name="jondo"></a>
+            <h2 class="text-center font-heading text-2xl sm:text-4xl py-5 text-white">Jondo.com</h2>
+            <div class="grid grid-cols-2 sm:grid-cols-2 justify-center" >
+
+                <div class="align-middle">
+                    <div class="opacity-100 text-white text-center p-5 pt-16 sm:pt-10">
+                        <p>
+                            Jondo is a global print on demand company.
+                        </p>
+                        
+                        <p class="pt-2">
+                            As their <strong>first engineering hire</strong>, I built a bespoke ERP from the ground up, unifying order management, production, shipping, accounting, and analytics.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="">
+                    <div class="opacity-100 text-gray-200 p-5 shadow-sm">
+                        <ul>
+                            <li class="flex items-start space-x-2">
+                                <i class="fas fa-warehouse mt-2 text-blue-500"></i><span>Orders originate in stores, transmitted via EDI</span>
+                            </li>
+                            <li class="mt-2 flex items-start space-x-2">
+                                <i class="fas fa-paint-roller mt-2 text-red-500"></i><span>C# application routes image files into pre-production buckets</span>
+                            </li>
+                            <li class="mt-2 flex items-start space-x-2">
+                                <i class="fas fa-barcode mt-2 text-pink-500"></i><span>Application edits image, injecting a barcode for order tracking</span>
+                            </li>
+                            <li class="mt-2 flex items-start space-x-2">
+                                <i class="fas fa-print mt-2 text-green-500"></i><span>C# application injects image into print queue via industrial raster software</span>
+                            </li>
+                            <li class="mt-2 flex items-start space-x-2">
+                                <i class="fas fa-shipping-fast mt-2 text-yellow-500"></i><span>Barcodes create shipping labels automatically</span>
+                            </li>
+                        </ul>        
+                    </div>
+                </div>
+            </div>
+            
+            <div class="">
+                <h3 class="text-center font-heading text-2xl sm:text-4xl py-5 text-white">Accomplishments</h2>
+
+                <ul class="text-gray-100 mx-auto px-3 sm:w-1/2">
+                    <li class=""><i class="fas fa-check-circle text-green-600"></i> Created company-wide ERP used to input, track, and manufacture orders</li>
+                    <li class=""><i class="fas fa-check-circle text-green-600"></i> Innovated method to transmit images to industrial raster software with no API</li>
+                    <li class=""><i class="fas fa-check-circle text-green-600"></i> Integrated directly with partners like Costco and UPS</li>
+                    <li class=""><i class="fas fa-check-circle text-green-600"></i> Used C# and PHP to inject and read barcodes with printed products</li>
+                    <li class=""><i class="fas fa-check-circle text-green-600"></i> Worked as sole developer, closely collaborating with stakeholders</li>
+                    <li class=""><i class="fas fa-check-circle text-green-600"></i> Scaled to 1000s of orders per day</li>
                 </ul>
             </div>
-        </nav>
-        <!-- Page Content-->
-        <div class="container-fluid p-0">
-            <!-- About-->
-            <section class="resume-section" id="about">
-                <div class="resume-section-content">
-                    <h1 class="mb-0">
-                        Eric
-                        <span class="text-primary">Koyanagi</span>
-                    </h1>
-                    <div class="subheading mb-5">
-                        Portland, OR 97006 · (714) 388-7803 ·
-                        <a href="mailto:eric@mean-games.com">eric@mean-games.com</a>
-                    </div>
-                    <p class="lead">After over 15 years in software, I am still humbled to learn new technologies, languages, and platforms.</p>
-                    <p class="lead">Being a team is very important to me. It doesn't matter if I'm in a leadership role or an engineering position -- I just want to do my part to help! I have experience with every level of the tech stack, from low level apache tuning to react-powered frontends or even a desktop application. Much of my experince is with the LAMP stack, but I am eager to learn any platform.</p>
-                    <p class="lead">Working hard is important to me. I have worked in several startups and have helped stakeholders build and sell several web properties.</p>
-                    <div class="social-icons">
-                        <a class="social-icon" href="https://www.linkedin.com/in/erickoyanagi/"><i class="fab fa-linkedin-in"></i></a>
-                        <a class="social-icon" href="https://github.com/eric-koyanagi"><i class="fab fa-github"></i></a>
-                        <!--a.social-icon(href='#')//i.fab.fa-github-->
-                        <!--a.social-icon(href='#')//i.fab.fa-twitter-->
-                        <!--a.social-icon(href='#')//i.fab.fa-facebook-f
--->
-                    </div>
-                </div>
-            </section>
-            <hr class="m-0" />
-            <!-- Experience-->
-            <section class="resume-section" id="experience">
-                <div class="resume-section-content">
-                    <h2 class="mb-5">Experience</h2>
-                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">Technical Lead</h3>
-                            <div class="subheading mb-3">The Tot Baby Corporation</div>
-                            <p>Lead engineer for scaled-out WooCommerce site with a Symfony-based backend. Led code reviews and scrum, handled deployments, and implemented features.</p>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">November 2021 - August 2023</span></div>
-                    </div>
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">Technical Lead</h3>
-                            <div class="subheading mb-3">Texty LLC</div>
-                            <p>Built a small, agile team and led day-to-day engineering for a nodeJS, Laravel, and React Native stack. Worked on a platform for influencers that utilized SMS.</p>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">December 2020 - November 2021</span></div>
-                    </div>
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">Senior Software Engineer</h3>
-                            <div class="subheading mb-3">Strength.com LLC</div>
-                            <p>Led a small, agile dev team. Implemented several e-commerce stores on Shopify, Shopify Plus, and WooCommerce. Engineered comprehensive data pipeline with Presto SQL, MySQL 8, Laravel, and Python. Helped transition several properties to new ownership.</p>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">March 2019 - December 2020</span></div>
-                    </div>
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">Senior Software Engineer</h3>
-                            <div class="subheading mb-3">Gotham Media</div>
-                            <p>Optimize Apache serving, boosting performance by over 300%. Implement sales funnels and create platform for data analysis and report automation.</p>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">Nov 2018 - March 2019</span></div>
-                    </div>
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">Software Engineer</h3>
-                            <div class="subheading mb-3">Mean Games LLC</div>
-                            <p>Develop 3D game in Unity 3D using C#. Develop AI using behavior trees, implemented game logic, and earned voter approval through Steam's Greenlight program. Optimized game with pooling algorithms and led Twitter marketing efforts and Itch.io product launch.</p>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">June 2015 - Nov 2018</span></div>
-                    </div>
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">Software Engineer</h3>
-                            <div class="subheading mb-3">Brite Blue Ventures LLC / Aerserv LLC</div>
-                            <p>Lead developer for high traffic Drupal content site ThirdAge.com. Worked on desktop applications in C# and web portals using Ruby On Rails. Worked in team to maintain and improve ad tech platform Aerserv, acquired successfully by InMobi in 2018.</p>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">2010 - June 2015</span></div>
-                    </div>
-                    <div class="d-flex flex-column flex-md-row justify-content-between">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">Software Engineer</h3>
-                            <div class="subheading mb-3">JONDO</div>
-                            <p>Pioneered web to print digital workflow for canvas prints - integrated with Costco Photo Center kiosks across the nation. Created custom barcode and tracking system in C# and PHP and workflow software to inject barcodes into print-ready files.</p>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">2006 - 2010</span></div>
-                    </div>
-                </div>
-            </section>
-            <hr class="m-0" />
-            <!-- Education-->
-            <section class="resume-section" id="education">
-                <div class="resume-section-content">
-                    <h2 class="mb-5">Education</h2>
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">University of California Fullterton</h3>
-                            <div>Computer Science</div>
-                            <p>Dean's List</p>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">2006 - 2008</span></div>
-                    </div>
-                    <div class="d-flex flex-column flex-md-row justify-content-between">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">Troy High School</h3>
-                            <div class="subheading mb-3">Technology Magnet Program</div>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">2001 - 2005</span></div>
-                    </div>
-                </div>
-            </section>
-            <hr class="m-0" />
-            <!-- Skills-->
-            <section class="resume-section" id="skills">
-                <div class="resume-section-content">
-                    <h2 class="mb-5">Skills</h2>
-                    <div class="subheading mb-3">Programming Languages & Tools</div>
-                    <ul class="list-inline dev-icons">
-                        <li class="list-inline-item"><i class="fab fa-html5"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-css3-alt"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-js-square"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-shopify"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-php"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-react"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-node"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-sass"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-wordpress"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-aws"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-gulp"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-bootstrap"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-unity"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-npm"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-drupal"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-stripe"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-git"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-linux"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-python"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-laravel"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-atlassian"></i></li>
-                    </ul>
-                    <div><p>HTML5, CSS3, SASS, Php, Node.js, Next.js, React, mySQL, MongoDb, AWS (EC2, SQS, Lambda, S3, RDS), Wordpress, WooCommerce, Shopify & Shopify Plus, Unity3D, C#, Gulp, Npm, Git, Klaviyo, Sendgrid, BitBucket Pipelines, Presto SQL, Apache, Laravel, Drupal, Ruby/Rails, Stripe, Zapier, Agile Development (Jira, Confluence, Trello), Authorize.net, Python, Affiliate Marketing (ShareASale / Limelight)</p></div>
-                    <div class="subheading mb-3">Not seeing your Stack?</div>
-                    <p>Great! I love an opportunity to learn new things. It isn't just about adding acronyms to this list. Each platform or tech is another tool in the box -- software engineering is often about finding the right tool for the job, so more tools are better!</p>
-                    <div class="subheading mb-3">Workflow</div>
-                    <ul class="fa-ul mb-0">
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            Mobile-First, Responsive Design
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            Cross Browser Testing & Debugging
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            Data Pipelines & Analysis
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            DevOps & Cloud Engineering
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            Agile Development & Scrum
-                        </li>
-                    </ul>
-                </div>
-            </section>
-            <hr class="m-0" />
-            <!-- Interests-->
-            <section class="resume-section" id="interests">
-                <div class="resume-section-content">
-                    <h2 class="mb-5">Interests</h2>
-                    <p>In my free time, I enjoy playing video games with my partner -- and sometimes tinkering in game development engines like Unity3D or Godot. I'm definitely a nerd like that! :D</p>
-                    <p class="mb-0">I love reading, and have a weakness for science fiction and fantasy. Again, nerd.</p>
-                    <p class="mb-0">I try to enjoy the natural beauty of the Pacific Northwest whenever I can.</p>
-                </div>
-            </section>
-            <hr class="m-0" />
-            <!-- Awards-->
+
+            <div class="">
+                <h3 class="text-center font-heading text-2xl sm:text-4xl py-5 text-white">Skills Used</h2>
+
+                <ul class="text-center text-gray-100">
+                    <li class="inline bg-slate-500 px-3 rounded shadow-sm">PHP</li>
+                    <li class="inline bg-slate-500 px-3 rounded shadow-sm">C#</li>
+                    <li class="inline bg-slate-500 px-3 rounded shadow-sm">mySQL</li>
+                    <li class="inline bg-slate-500 px-3 rounded shadow-sm">JavaScript</li>
+                    <li class="inline bg-slate-500 px-3 rounded shadow-sm">EDI</li>
+                    <li class="inline bg-slate-500 px-3 rounded shadow-sm">APIs</li>
+                    <li class="inline bg-slate-500 px-3 rounded shadow-sm">ERP</li>
+                </ul>
+            </div>
+
+            <div class="w-full text-center absolute bottom-1 text-white text-2xl">
+                <a href="#aerserv">Scroll <span><i class="fas fa-arrow-down"></i></span></a>
+            </div>            
         </div>
-        <!-- Bootstrap core JS-->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
-        <!-- Third party plugin JS-->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
-        <!-- Core theme JS-->
-        <script src="js/scripts.js"></script>
+
+        <div class="w-100 min-h-screen bg-blue-500 relative">
+            <a name="aerserv"></a>            
+            <h2 class="text-center font-heading text-2xl sm:text-4xl py-5 text-gray-800">AerServ</h2>
+            <div class="container mx-auto px-5">
+                <p>
+                    AerServ was a revolutionary adtech mediation product. 
+                    As one of the first engineering hires, I led the client-facing UI that facilitated rich analytics for 
+                    customers, crunching hundreds of millions of rows of data into simple visualilzations. 
+                </p>
+                
+                <div class="">
+                    <h3 class="text-center font-heading text-2xl sm:text-4xl py-5 text-gray-800">Accomplishments</h2>
+    
+                    <ul class="text-gray-800 mx-auto px-3 sm:w-1/2">
+                        <li class=""><i class="fas fa-check-circle text-green-600"></i> Developed Ruby on Rails UI for surfacing client metrics</li>
+                        <li class=""><i class="fas fa-check-circle text-green-600"></i> Worked on C# desktop application for online backups</li>
+                        <li class=""><i class="fas fa-check-circle text-green-600"></i> Scaled and maintained Drupal-based site founded in 1996</li>
+                        <li class=""><i class="fas fa-check-circle text-green-600"></i> Helped tune mySQL and ETL for data pipelines</li>
+                        <li class=""><i class="fas fa-check-circle text-green-600"></i> Implemented features for java-based AdServer and android/IOS SDKs</li>
+                    </ul>
+                </div>
+
+                <div class="">
+                    <h3 class="text-center font-heading text-2xl sm:text-4xl py-5 text-gray-800">Skills Used</h2>
+    
+                    <ul class="text-center text-gray-800">
+                        <li class="inline bg-slate-500 px-3 rounded shadow-sm">PHP</li>
+                        <li class="inline bg-slate-500 px-3 rounded shadow-sm">Java</li>
+                        <li class="inline bg-slate-500 px-3 rounded shadow-sm">C#</li>
+                        <li class="inline bg-slate-500 px-3 rounded shadow-sm">Ruby on Rails</li>
+                        <li class="inline bg-slate-500 px-3 rounded shadow-sm">mySQL</li>
+                        <li class="inline bg-slate-500 px-3 rounded shadow-sm">JavaScript</li>
+                        <li class="inline bg-slate-500 px-3 rounded shadow-sm">AWS</li>
+                        <li class="inline bg-slate-500 px-3 rounded shadow-sm">Drupal</li>
+                        <li class="inline bg-slate-500 px-3 rounded shadow-sm">Wordpress</li>
+                    </ul>
+                </div>
+
+                <div class="text-center mt-3">
+                    <img src="./assets/img/aerserv-1.jpg" class="rounded-t-lg"/>
+                </div>
+
+                <div class="w-full text-center absolute bottom-1 text-gray-800 text-2xl">
+                    <a href="#meangames">Scroll <span><i class="fas fa-arrow-down"></i></span></a>
+                </div> 
+            </div>
+            
+            
+        </div>
+
+        <div class="w-100 min-h-screen bg-gray-400">
+            <a name="meangames"></a>
+            <h2>Mean Games LLC.</h2>
+            <p>
+                Working as a founder with a small team of artists, writers, and muscicians, I created a 
+                space-themed RPG using the Unity platform. The Steam community voted to approve our project 
+                for sale via the Steam Greenlight program. 
+            </p>
+
+            <div>
+                <img src="./assets/img/aerserv1.jpg" alt="">
+                <div class="">Created pooling algorithms, tooling for level creation, and implemented all game logic</div>
+
+                <img src="./assets/img/jondo2.jpg">
+                <div class="">Led social media push to obtain approval, managed teammates, and led project</div>
+                
+            </div>
+            
+        </div>
+
+        <div class="w-100 min-h-screen bg-gray-500">
+            <h2>Texty, LLC</h2>
+            <p>
+                Texty was a Saas-style platform that allowed influencers to interact with their fans 1-on-1 
+                via text messaging, monetizing those interactions by selling video responses, phone calls, and more.
+                Working closely with the founder, I managed a small team of devs to create a successful MVP that saw 
+                customer adoption on both the apple and android stores. 
+            </p>
+
+            <div>
+                <img src="./assets/img/aerserv1.jpg" alt="">
+                <div class="">Led team working in React Native, NodeJS, Laravel, and VueJs.</div>
+
+                <img src="./assets/img/jondo2.jpg">
+                <div class="">Architected robust pipeline for Twilio-backed SMS interactions, e-commerce transactions, and payouts</div>                
+            </div>
+            
+        </div>
+
+        <div class="w-100 min-h-screen bg-gray-200">
+            <h2>The Tot Baby Corporation</h2>
+            <p>
+                The Tot was an online store focused on kid-safe products. With up to $20 million per year in revenue, I 
+                was responsible for ensuring maximum uptime, improving efficiency, managing deployments, and feature 
+                development. 
+            </p>
+
+            <div>
+                <img src="./assets/img/aerserv1.jpg" alt="">
+                <div class="">Led team working in WooCommerce, Symfony, and JavaScript</div>
+
+                <img src="./assets/img/jondo2.jpg">
+                <div class="">Successfully completed complex migration to Shopify Plus</div>
+            </div>
+            
+        </div>
+
+        <div class="w-100 min-h-screen bg-gray-200">
+            <h2>Let's connect</h2>
+            <p>
+                <a href="https://www.linkedin.com/in/erickoyanagi/" class="rounded bg-blue-800 px-6 py-2 text-white"><span></span> My LinkedIn</a>
+                <a href="https://github.com/eric-koyanagi"><span></span> My Github</a>
+            </p>            
+            
+        </div>
+        
     </body>
+
+    <script src="./js/scripts.js"></script>
 </html>
