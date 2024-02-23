@@ -16,7 +16,7 @@
         <link href="./css/output.css" rel="stylesheet">
     </head>
     <body class="font-display">
-        <div class="progressBar" style="position:fixed; top:0; height:5px; background:#aaa"></div>
+        <div class="progressBar" style="position:fixed; top:0; height:5px; background:#aaa; z-index:9999"></div>
 
         <div class="w-100 text-center min-h-screen bg-fixed relative" style="background-image: url('./assets/img/workflow-example.jpg');">
             <h1 class="py-8 mb-10 text-4xl sm:text-7xl shadow-sm font-heading text-white">Let's Make Something Great!</h1>
@@ -27,15 +27,6 @@
                     
                 </div>
             </div>
-            <!-- <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 px-3 pb-10" >
-                
-                <div class="">
-                    I use skills like <strong>PHP</strong>, </strong>JavaScript</strong>, <strong>mySQL</strong>, 
-                    and <strong>AWS</strong> to build robust, scalable software. Working in industries ranging from 
-                    e-commerce to adtech, I believe in product ownership and work ethic. 
-                </div>
-                
-            </div> -->
 
             <div class="text-center my-10 px-6 sm:mt-36">
                 <a href="https://www.linkedin.com/in/erickoyanagi/" class="block sm:inline rounded bg-blue-800 text-2xl sm:text-3xl px-6 py-2 text-white sm:mr-5 hover:bg-blue-600">
@@ -47,7 +38,7 @@
             </div>
 
             <div class="w-full text-center absolute bottom-1 text-white text-2xl">
-                <a href="#jondo">Scroll <span><i class="fas fa-arrow-down"></i></span></a>
+                <a href="#jondo" class="">Scroll <span><i class="fas fa-arrow-down"></i></span></a>
             </div>
         </div>
 
@@ -55,10 +46,10 @@
         <div class="w-100 min-h-screen bg-gray-200 bg-fixed relative pb-10" style="background-image: url('./assets/img/jondo-1.jpg');">
             <a name="jondo"></a>
             <h2 class="text-center font-heading text-2xl sm:text-4xl py-5 text-white">Jondo.com</h2>
-            <div class="grid grid-cols-2 sm:grid-cols-2 justify-center" >
+            <div class="" >
 
                 <div class="align-middle">
-                    <div class="opacity-100 text-white text-center p-5 pt-16 sm:pt-10">
+                    <div class="opacity-100 text-white text-center p-5">
                         <p>
                             Jondo is a global print on demand company.
                         </p>
@@ -66,42 +57,44 @@
                         <p class="pt-2">
                             As their <strong>first engineering hire</strong>, I built a bespoke ERP from the ground up, unifying order management, production, shipping, accounting, and analytics.
                         </p>
+
+                        <div class="container mx-auto w-full sm:w-1/3">
+                            <div class="opacity-100 text-gray-200 p-5 shadow-sm">
+                                <ul class="text-left">
+                                    <li class="flex items-start space-x-2">
+                                        <i class="fas fa-warehouse mt-2 text-blue-500"></i><span>Orders originate in stores, transmitted via EDI</span>
+                                    </li>
+                                    <li class="mt-2 flex items-start space-x-2">
+                                        <i class="fas fa-paint-roller mt-2 text-red-500"></i><span>C# application routes image files into pre-production buckets</span>
+                                    </li>
+                                    <li class="mt-2 flex items-start space-x-2">
+                                        <i class="fas fa-barcode mt-2 text-pink-500"></i><span>Application edits image, injecting a barcode for order tracking</span>
+                                    </li>
+                                    <li class="mt-2 flex items-start space-x-2">
+                                        <i class="fas fa-print mt-2 text-green-500"></i><span>C# application injects image into print queue via industrial raster software</span>
+                                    </li>
+                                    <li class="mt-2 flex items-start space-x-2">
+                                        <i class="fas fa-shipping-fast mt-2 text-yellow-500"></i><span>Barcodes create shipping labels automatically</span>
+                                    </li>
+                                </ul>        
+                            </div>
+                        </div>
                     </div>
                 </div>
 
-                <div class="">
-                    <div class="opacity-100 text-gray-200 p-5 shadow-sm">
-                        <ul>
-                            <li class="flex items-start space-x-2">
-                                <i class="fas fa-warehouse mt-2 text-blue-500"></i><span>Orders originate in stores, transmitted via EDI</span>
-                            </li>
-                            <li class="mt-2 flex items-start space-x-2">
-                                <i class="fas fa-paint-roller mt-2 text-red-500"></i><span>C# application routes image files into pre-production buckets</span>
-                            </li>
-                            <li class="mt-2 flex items-start space-x-2">
-                                <i class="fas fa-barcode mt-2 text-pink-500"></i><span>Application edits image, injecting a barcode for order tracking</span>
-                            </li>
-                            <li class="mt-2 flex items-start space-x-2">
-                                <i class="fas fa-print mt-2 text-green-500"></i><span>C# application injects image into print queue via industrial raster software</span>
-                            </li>
-                            <li class="mt-2 flex items-start space-x-2">
-                                <i class="fas fa-shipping-fast mt-2 text-yellow-500"></i><span>Barcodes create shipping labels automatically</span>
-                            </li>
-                        </ul>        
-                    </div>
-                </div>
+                
             </div>
             
             <div class="">
                 <h3 class="text-center font-heading text-2xl sm:text-4xl py-5 text-white">Accomplishments</h2>
 
-                <ul class="text-gray-100 mx-auto px-3 sm:w-1/2">
-                    <li class=""><i class="fas fa-check-circle text-green-600"></i> Created company-wide ERP used to input, track, and manufacture orders</li>
-                    <li class=""><i class="fas fa-check-circle text-green-600"></i> Innovated method to transmit images to industrial raster software with no API</li>
-                    <li class=""><i class="fas fa-check-circle text-green-600"></i> Integrated directly with partners like Costco and UPS</li>
-                    <li class=""><i class="fas fa-check-circle text-green-600"></i> Used C# and PHP to inject and read barcodes with printed products</li>
-                    <li class=""><i class="fas fa-check-circle text-green-600"></i> Worked as sole developer, closely collaborating with stakeholders</li>
-                    <li class=""><i class="fas fa-check-circle text-green-600"></i> Scaled to 1000s of orders per day</li>
+                <ul class="text-gray-100 mx-auto px-3 sm:w-1/3">
+                    <li class="flex items-baseline space-x-2"><i class="fas fa-check-circle text-green-600 mr-2"></i> Created company-wide ERP used to input, track, and manufacture orders</li>
+                    <li class="flex items-baseline space-x-2"><i class="fas fa-check-circle text-green-600 mr-2"></i> Innovated method to transmit images to industrial raster software with no API</li>
+                    <li class="flex items-baseline space-x-2"><i class="fas fa-check-circle text-green-600 mr-2"></i> Integrated directly with partners like Costco and UPS</li>
+                    <li class="flex items-baseline space-x-2"><i class="fas fa-check-circle text-green-600 mr-2"></i> Used C# and PHP to inject and read barcodes with printed products</li>
+                    <li class="flex items-baseline space-x-2"><i class="fas fa-check-circle text-green-600 mr-2"></i> Worked as sole developer, closely collaborating with stakeholders</li>
+                    <li class="flex items-baseline space-x-2"><i class="fas fa-check-circle text-green-600 mr-2"></i> Scaled to 1000s of orders per day</li>
                 </ul>
             </div>
 
@@ -137,12 +130,12 @@
                 <div class="">
                     <h3 class="text-center font-heading text-2xl sm:text-4xl py-5 text-gray-800">Accomplishments</h2>
     
-                    <ul class="text-gray-800 mx-auto px-3 sm:w-1/2">
-                        <li class=""><i class="fas fa-check-circle text-green-600"></i> Developed Ruby on Rails UI for surfacing client metrics</li>
-                        <li class=""><i class="fas fa-check-circle text-green-600"></i> Worked on C# desktop application for online backups</li>
-                        <li class=""><i class="fas fa-check-circle text-green-600"></i> Scaled and maintained Drupal-based site founded in 1996</li>
-                        <li class=""><i class="fas fa-check-circle text-green-600"></i> Helped tune mySQL and ETL for data pipelines</li>
-                        <li class=""><i class="fas fa-check-circle text-green-600"></i> Implemented features for java-based AdServer and android/IOS SDKs</li>
+                    <ul class="text-gray-800 mx-auto px-3 sm:w-1/3">
+                        <li class="flex items-baseline space-x-2"><i class="fas fa-check-circle text-green-600 mr-2"></i> Developed Ruby on Rails UI for surfacing client metrics</li>
+                        <li class="flex items-baseline space-x-2"><i class="fas fa-check-circle text-green-600 mr-2"></i> Worked on C# desktop application for online backups</li>
+                        <li class="flex items-baseline space-x-2"><i class="fas fa-check-circle text-green-600 mr-2"></i> Scaled and maintained Drupal-based site founded in 1996</li>
+                        <li class="flex items-baseline space-x-2"><i class="fas fa-check-circle text-green-600 mr-2"></i> Helped tune mySQL and ETL for data pipelines</li>
+                        <li class="flex items-baseline space-x-2"><i class="fas fa-check-circle text-green-600 mr-2"></i> Implemented features for java-based AdServer and android/IOS SDKs</li>
                     </ul>
                 </div>
 
@@ -165,81 +158,226 @@
                 <div class="text-center mt-3">
                     <img src="./assets/img/aerserv-1.jpg" class="rounded-t-lg"/>
                 </div>
-
-                <div class="w-full text-center absolute bottom-1 text-gray-800 text-2xl">
-                    <a href="#meangames">Scroll <span><i class="fas fa-arrow-down"></i></span></a>
-                </div> 
+                 
             </div>
             
-            
+            <div class="w-full text-center absolute bottom-1 text-gray-800 text-2xl">
+                <a href="#meangames">Scroll <span><i class="fas fa-arrow-down"></i></span></a>
+            </div>
         </div>
 
-        <div class="w-100 min-h-screen bg-gray-400">
+        <div class="w-100 min-h-screen bg-gray-400 relative bg-fixed bg-cover" style="background-image: url('./assets/img/mean-games-1.jpg');">
             <a name="meangames"></a>
-            <h2>Mean Games LLC.</h2>
-            <p>
-                Working as a founder with a small team of artists, writers, and muscicians, I created a 
-                space-themed RPG using the Unity platform. The Steam community voted to approve our project 
-                for sale via the Steam Greenlight program. 
-            </p>
+            <h2 class="text-center font-heading text-2xl sm:text-4xl py-5 text-white pt-10">Mean Games</h2>
+            <div class="container mx-auto px-5 text-white">
+                <p>
+                    Working as a founder with a small team of artists, writers, and musicians, I created a space-themed RPG using the Unity platform. The Steam community voted to approve our project for sale via the Steam Greenlight program.  
+                </p>
 
-            <div>
-                <img src="./assets/img/aerserv1.jpg" alt="">
-                <div class="">Created pooling algorithms, tooling for level creation, and implemented all game logic</div>
+                <div class="">
+                    <h3 class="text-center font-heading text-2xl sm:text-4xl py-5 text-white">Accomplishments</h2>
+    
+                    <ul class="text-white mx-auto px-3 sm:w-1/3">
+                        <li class="flex items-baseline space-x-2"><i class="fas fa-check-circle text-green-600 mr-2"></i> Implemented game logic using C# and Unity3D</li>
+                        <li class="flex items-baseline space-x-2"><i class="fas fa-check-circle text-green-600 mr-2"></i> Created pooling toolsets for rich parallax effects with no latency</li>
+                        <li class="flex items-baseline space-x-2"><i class="fas fa-check-circle text-green-600 mr-2"></i> Developed behavior trees for AI</li>
+                        <li class="flex items-baseline space-x-2"><i class="fas fa-check-circle text-green-600 mr-2"></i> Created tooling for level creation within Unity Editor</li>
+                        <li class="flex items-baseline space-x-2"><i class="fas fa-check-circle text-green-600 mr-2"></i> Collaberated with artists, muscicians, and writers</li>
+                        <li class="flex items-baseline space-x-2"><i class="fas fa-check-circle text-green-600 mr-2"></i> Earned user approval through Steam Greenlight voting system</li>
+                    </ul>
+                </div>
 
-                <img src="./assets/img/jondo2.jpg">
-                <div class="">Led social media push to obtain approval, managed teammates, and led project</div>
-                
+                <div class="">
+                    <h3 class="text-center font-heading text-2xl sm:text-4xl py-5 text-white">Skills Used</h2>
+    
+                    <ul class="text-center text-white">
+                        <li class="inline bg-slate-500 px-3 rounded shadow-sm">C#</li>
+                        <li class="inline bg-slate-500 px-3 rounded shadow-sm">Unity3D</li>
+                        <li class="inline bg-slate-500 px-3 rounded shadow-sm">Behavior Trees</li>
+                        <li class="inline bg-slate-500 px-3 rounded shadow-sm">Vector-based mathematics</li>
+                        <li class="inline bg-slate-500 px-3 rounded shadow-sm">Twitter</li>
+                        <li class="inline bg-slate-500 px-3 rounded shadow-sm">Steam</li>                        
+                    </ul>
+                </div>
+            </div>
+
+            <div class="w-full text-center absolute bottom-1 text-white text-2xl">
+                <a href="#strength">Scroll <span><i class="fas fa-arrow-down"></i></span></a>
+            </div>
+        </div>
+
+        <div class="w-100 min-h-screen bg-gray-800 relative bg-fixed bg-stretch" style="background-image: url('./assets/img/strength-1.jpg');">
+            <a name="strength"></a>
+            <h2 class="text-center font-heading text-2xl sm:text-4xl py-5 pt-10 text-white">Strength.com</h2>
+
+            <div class="container mx-auto px-5 text-center text-white">
+                <p>
+                    Strength.com was a premium protein line for athletes. With a complex partners system that allowed gyms to host a white-labelled store for their members, 
+                    Strength also sold direct-to-consumers using Shopify Plus. 
+                </p>
+                <p class="pt-2">
+                    Unfortunately, we were trying to launch this brand right as Covid-19 started shutting down our primary customers (schools and gyms)!
+                </p>
+            </div>
+
+            <div class="text-white">
+                <h3 class="text-center font-heading text-2xl sm:text-4xl py-5 ">Accomplishments</h2>
+
+                <ul class=" mx-auto px-3 sm:w-1/3">
+                    <li class="flex items-baseline space-x-2"><i class="fas fa-check-circle text-green-600 mr-2"></i> Worked on bespoke Laravel e-commerce system</li>
+                    <li class="flex items-baseline space-x-2"><i class="fas fa-check-circle text-green-600 mr-2"></i> Migrated DTC site to Shopify Plus</li>
+                    <li class="flex items-baseline space-x-2"><i class="fas fa-check-circle text-green-600 mr-2"></i> Developed fingerprinting pixel, implmented with Treasure Data</li>
+                    <li class="flex items-baseline space-x-2"><i class="fas fa-check-circle text-green-600 mr-2"></i> Built data pipeline pushing analytics into Tableau</li>
+                    <li class="flex items-baseline space-x-2"><i class="fas fa-check-circle text-green-600 mr-2"></i> Sole developer for subsidary brand sites in WooCommerce</li>
+                </ul>
+            </div>
+
+            <div class="">
+                <h3 class="text-center font-heading text-2xl sm:text-4xl py-5 text-white">Skills Used</h2>
+
+                <ul class="text-center text-white">
+                    <li class="inline bg-slate-500 px-3 rounded shadow-sm">Laravel</li>
+                    <li class="inline bg-slate-500 px-3 rounded shadow-sm">PHP</li>
+                    <li class="inline bg-slate-500 px-3 rounded shadow-sm">JavaScript</li>
+                    <li class="inline bg-slate-500 px-3 rounded shadow-sm">AWS</li>     
+                    <li class="inline bg-slate-500 px-3 rounded shadow-sm">Shopify Plus</li>
+                    <li class="inline bg-slate-500 px-3 rounded shadow-sm">mySQL</li>
+                    <li class="inline bg-slate-500 px-3 rounded shadow-sm">WooCommerce</li>
+                    <li class="inline bg-slate-500 px-3 rounded shadow-sm">TreasureData (CDP)</li>
+                    <li class="inline bg-slate-500 px-3 rounded shadow-sm">Python</li>
+                </ul>
+            </div>
+            
+
+            <div class="w-full text-center absolute bottom-1 text-white text-2xl">
+                <a href="#texty">Scroll <span><i class="fas fa-arrow-down"></i></span></a>
+            </div>
+        </div>
+
+
+        <div class="w-100 min-h-screen bg-gray-800 relative bg-fixed bg-contain sm:bg-cover" style="background-image: url('./assets/img/texty-1.png');">
+            <a name="texty"></a>
+            <h2 class="text-center font-heading text-2xl sm:text-4xl py-5 text-white pt-10">Texty</h2>
+            <div class="container mx-auto px-5 text-white text-center">
+                <p>
+                    Texty was a Saas-style platform that allowed influencers to interact with their fans 1-on-1 
+                    via text messaging, monetizing those interactions by selling video responses, phone calls, and more.
+                </p>
+                <p class="pt-2">
+                    Working closely with the founder, I managed a small team of devs to create a successful MVP that saw 
+                    customer adoption on both the apple and android stores. 
+                </p>
+
+                <p class="pt-2">
+                    As a SaaS app, we developed a mobile app, a customer-facing web app that worked as a store, and a backend API. 
+                </p>
+            </div>
+            
+
+            <div class="px-4 py-3">
+                <img src="./assets/img/texty-2.jpg" class="rounded sm:w-1/4 sm:mx-auto" alt="Texty App UI">
+            </div>
+
+            <div class="">
+                <h3 class="text-center font-heading text-2xl sm:text-4xl py-5 text-white">Accomplishments</h2>
+
+                <ul class="text-white mx-auto px-3 sm:w-1/3">
+                    <li class="flex items-baseline space-x-2"><i class="fas fa-check-circle text-green-600 mr-2"></i> Cultivated an international team of up to 9 developers</li>
+                    <li class="flex items-baseline space-x-2"><i class="fas fa-check-circle text-green-600 mr-2"></i> Managed deployments, code reviews, daily scrums</li>
+                    <li class="flex items-baseline space-x-2"><i class="fas fa-check-circle text-green-600 mr-2"></i> Architected flexible, robust core powered by AWS</li>
+                    <li class="flex items-baseline space-x-2"><i class="fas fa-check-circle text-green-600 mr-2"></i> Implemented features in React Native, Node.js, Vue, and PHP</li>
+                </ul>
+            </div>
+
+            <div class="pb-12">
+                <h3 class="text-center font-heading text-2xl sm:text-4xl py-5 text-white">Skills Used</h2>
+
+                <ul class="text-center text-white">
+                    <li class="inline bg-slate-500 px-3 rounded shadow-sm">JavaScript</li>
+                    <li class="inline bg-slate-500 px-3 rounded shadow-sm">React Native</li>
+                    <li class="inline bg-slate-500 px-3 rounded shadow-sm">VueJs</li>
+                    <li class="inline bg-slate-500 px-3 rounded shadow-sm">NodeJs</li>                        
+                    <li class="inline bg-slate-500 px-3 rounded shadow-sm">Laravel</li>
+                </ul>
+            </div>
+
+            <div class="w-full text-center absolute bottom-1 text-white text-2xl">
+                <a href="#tot">Scroll <span><i class="fas fa-arrow-down"></i></span></a>
             </div>
             
         </div>
 
-        <div class="w-100 min-h-screen bg-gray-500">
-            <h2>Texty, LLC</h2>
-            <p>
-                Texty was a Saas-style platform that allowed influencers to interact with their fans 1-on-1 
-                via text messaging, monetizing those interactions by selling video responses, phone calls, and more.
-                Working closely with the founder, I managed a small team of devs to create a successful MVP that saw 
-                customer adoption on both the apple and android stores. 
-            </p>
+        <div class="w-100 min-h-screen bg-green-900">
+            <a name="tot"></a>
+            <h2 class="text-center font-heading text-2xl sm:text-4xl py-5 text-white pt-10">TheTot.com</h2>
 
-            <div>
-                <img src="./assets/img/aerserv1.jpg" alt="">
-                <div class="">Led team working in React Native, NodeJS, Laravel, and VueJs.</div>
+            <div class="mx-auto w-24 bg-white rounded-full p-3 shadow-md">
+                <img src="./assets/img/tot-1.png" class="rounded"/>
+            </div>
 
-                <img src="./assets/img/jondo2.jpg">
-                <div class="">Architected robust pipeline for Twilio-backed SMS interactions, e-commerce transactions, and payouts</div>                
+            <div class="container mx-auto px-5 text-white text-center mt-3">
+                <p>
+                    The Tot was an online store focused on kid-safe products. With up to $20 million per year in revenue, I was responsible for ensuring maximum uptime, improving efficiency, managing deployments, and feature development. 
+                </p>
+                <p class="pt-2">
+                    The Tot was acquired by <strong>Neighborhood Goods</strong> in 2023.
+                </p>
+            </div>
+
+            <div class="">
+                <h3 class="text-center font-heading text-2xl sm:text-4xl py-5 text-white">Accomplishments</h2>
+
+                <ul class="text-white mx-auto px-3 sm:w-1/3">
+                    <li class="flex items-baseline space-x-2"><i class="fas fa-check-circle text-green-600 mr-2"></i> Technical lead responsible for day-to-day engineering management</li>
+                    <li class="flex items-baseline space-x-2"><i class="fas fa-check-circle text-green-600 mr-2"></i> Managed deployments, code reviews, daily scrums</li>
+                    <li class="flex items-baseline space-x-2"><i class="fas fa-check-circle text-green-600 mr-2"></i> Created complex backorders system that integrated with WooCommerce and Symfony</li>
+                    <li class="flex items-baseline space-x-2"><i class="fas fa-check-circle text-green-600 mr-2"></i> Optimzed legacy queries, fixed flaws with ElasticSearch</li>
+                    <li class="flex items-baseline space-x-2"><i class="fas fa-check-circle text-green-600 mr-2"></i> Build buisiness critical-tooling to solve long-standing admin issues</li>
+                </ul>
+            </div>
+
+            <div class="pb-12">
+                <h3 class="text-center font-heading text-2xl sm:text-4xl py-5 text-white">Skills Used</h2>
+
+                <ul class="text-center text-white">
+                    <li class="inline bg-slate-500 px-3 rounded shadow-sm">JavaScript</li>
+                    <li class="inline bg-slate-500 px-3 rounded shadow-sm">PHP</li>
+                    <li class="inline bg-slate-500 px-3 rounded shadow-sm">WooCommerce</li>
+                    <li class="inline bg-slate-500 px-3 rounded shadow-sm">Shopify Plus</li>
+                    <li class="inline bg-slate-500 px-3 rounded shadow-sm">Symfony</li>                        
+                    <li class="inline bg-slate-500 px-3 rounded shadow-sm">React</li>
+                    <li class="inline bg-slate-500 px-3 rounded shadow-sm">mySQL</li>
+                    <li class="inline bg-slate-500 px-3 rounded shadow-sm">AWS</li>
+                    <li class="inline bg-slate-500 px-3 rounded shadow-sm">ElasticSearch</li>
+                    <li class="inline bg-slate-500 px-3 rounded shadow-sm">ElasticCache</li>
+                    <li class="inline bg-slate-500 px-3 rounded shadow-sm">Lambda</li>
+                </ul>
             </div>
             
         </div>
 
-        <div class="w-100 min-h-screen bg-gray-200">
-            <h2>The Tot Baby Corporation</h2>
-            <p>
-                The Tot was an online store focused on kid-safe products. With up to $20 million per year in revenue, I 
-                was responsible for ensuring maximum uptime, improving efficiency, managing deployments, and feature 
-                development. 
-            </p>
+        <div class="w-100 bg-black py-10 text-center text-white">            
 
-            <div>
-                <img src="./assets/img/aerserv1.jpg" alt="">
-                <div class="">Led team working in WooCommerce, Symfony, and JavaScript</div>
+            <h2 class="font-heading text-2xl sm:text-4xl my-4">Let's connect!</h2>
+            <div class="text-center my-5 px-6">
+                <a href="mailto:eric@mean-games.com" class="block sm:inline rounded bg-blue-800 text-2xl sm:text-3xl px-6 py-2 text-white sm:mr-5 hover:bg-blue-600">
+                    <span class="pr-3 text-blue-900"><i class="fas fa-paper-plane"></i></span> Email Me
+                </a>
 
-                <img src="./assets/img/jondo2.jpg">
-                <div class="">Successfully completed complex migration to Shopify Plus</div>
+                <a href="https://www.linkedin.com/in/erickoyanagi/" class="mt-5 sm:mt-0 block sm:inline rounded bg-blue-800 text-2xl sm:text-3xl px-6 py-2 text-white sm:mr-5 hover:bg-blue-600">
+                    <span class="pr-3 text-blue-900"><i class="fab fa-linkedin-in"></i></span> My LinkedIn
+                </a>
+                <a href="https://github.com/eric-koyanagi" class="mt-5 sm:mt-0 block w-100 sm:inline rounded bg-blue-800 text-2xl sm:text-3xl px-6 py-2 text-white hover:bg-blue-600">
+                    <span class="pr-3 text-blue-900"><i class="fab fa-github"></i></span> My Github
+                </a>
             </div>
-            
-        </div>
 
-        <div class="w-100 min-h-screen bg-gray-200">
-            <h2>Let's connect</h2>
+
+            <h2 class="font-heading text-2xl sm:text-4xl mt-10 mb-4">Want to Read More?</h2>
             <p>
-                <a href="https://www.linkedin.com/in/erickoyanagi/" class="rounded bg-blue-800 px-6 py-2 text-white"><span></span> My LinkedIn</a>
-                <a href="https://github.com/eric-koyanagi"><span></span> My Github</a>
-            </p>            
-            
-        </div>
-        
+                I sometimes write about tech on my <a href="https://articles.erickoyanagi.com" class="underline">blog</a>. 
+            </p>
+        </div>        
     </body>
 
     <script src="./js/scripts.js"></script>
